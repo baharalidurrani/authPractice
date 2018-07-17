@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Sign Up Page</h1>
+    <% include ./Layout/Header.ejs %>
+    <br>
+    <br>
+        <form action="/register" method="post">
+            <label>Name</label>
+            <input type="text" name="NAME" id="">
+            <br>
+            <label>Age</label>
+            <input type="number" name="AGE" id="">
+            <br>
+            <label>Email</label>
+            <input type="email" name="EMAIL" id="">
+            <br>
+            <label>Password</label>
+            <input type="password" name="PASSWORD" id="">
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+</body>
+
+</html>
